@@ -47,7 +47,7 @@
             @isset($marker['description'])
                 .setPopup(new mapboxgl.Popup({
                     offset: 25
-                }).setText('{{ $marker['description'] }}'))
+                }).setText('{!! $marker['description'] !!}'))
             @endisset
             .addTo(map);
         @else
