@@ -47,7 +47,7 @@
             @isset($marker['description'])
                 .setPopup(new mapboxgl.Popup({
                     offset: 25
-                }).setText('{!! $marker['description'] !!}'))
+                }).setHTML('{!! $marker['description'] !!}'))
             @endisset
             .addTo(map);
         @else
@@ -56,7 +56,7 @@
             @isset($marker['description'])
                 .setPopup(new mapboxgl.Popup({
                     offset: 25
-                }).setText('{!! $marker['description'] !!}'))
+                }).setHTML('{!! $marker['description'] !!}'))
             @endisset
             .addTo(map);
         @endif
